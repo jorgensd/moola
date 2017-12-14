@@ -36,8 +36,8 @@ class ArmijoLineSearch(LineSearch):
             raise ValueError("start_stp must be > 0")
         if stpmin <= 0:
             raise ValueError("stpmin must be > 0")
-	if stpmax <=0 or stpmax <= stpmin:
-            raise ValueError, "stpmax must be > 0 and > stpmin"
+        if stpmax <=0 or stpmax <= stpmin:
+            raise ValueError("stpmax must be > 0 and > stpmin")
         
         self.ftol         = ftol 
         self.start_stp    = start_stp
